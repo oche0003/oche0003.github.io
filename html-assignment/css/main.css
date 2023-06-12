@@ -1,0 +1,48 @@
+section {
+    background-color: rgb(93, 19, 19);
+}
+h1{
+    color:white
+}
+h2{
+    color: white;
+}
+h3{
+    color: white;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+  }
+  header, footer {
+    background-color:rgb(93, 19, 19);
+  }
+  .site-title {
+    color: white;
+  }
+  #my-image {
+   width:300px ; box-shadow: 0 0 2px 1px black;
+  }
+  .square-list {
+    list-style-type: square;
+  }
+  .hobby-list li:nth-child(odd) {
+    background-color: rgb(93, 19, 19);
+  }
+  nav ul {
+    list-style-type: none;
+  }
+  .no-underline {
+  text-decoration: none;
+}
+.styled-link {
+    background-color: #eca3a3;
+    border: 1px solid #eca3a3;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000;
+  }
+  .styled-link:hover,
+.styled-link:focus {
+  background-color:#eca3a3;
+}
