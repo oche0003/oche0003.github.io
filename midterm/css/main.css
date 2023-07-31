@@ -23,7 +23,7 @@ nav ul li{
   border-left: 1px solid black;
   text-transform:uppercase;
 }
-.nav-link:nth-child(HOME) {
+nav li:nth-child(1) {
   border-left: none;
 }
 nav ul {
