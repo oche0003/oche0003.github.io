@@ -1,0 +1,1007 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+
+
+
+
+p {
+  font-size: 0.7rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  /* Apply the 'Open Sans' font */
+
+
+}
+
+/* img,
+iframe {
+  width: 100%;
+  height: auto;
+} */
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.search-bar input {
+  flex: 1;
+}
+
+.search-bar form {
+
+  display: flex;
+  width: 100%
+}
+
+.search-bar button {
+  background: transparent;
+  border: 2px solid #c78c06;
+
+}
+
+.search-button::after {
+  content: "search";
+  font-family: "Material Icons Outlined";
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: #c78c06;
+}
+
+
+.img-container {
+  position: relative;
+  /* background-color: red; */
+  /* Ensure positioning context for absolute positioning */
+}
+
+.main-banner {
+  width: 100%;
+  /* Make sure the image covers the container */
+  height: 100%;
+  /* Maintain aspect ratio */
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+
+.text-overlay {
+  position: relative;
+
+
+  /* Semi-transparent black overlay */
+
+  color: white;
+  padding: 55px 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 200;
+}
+
+.text-overlay div {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+}
+
+#site-title {
+  font-size: 50px;
+  /* Adjust the font size to your desired value */
+  margin-top: 0;
+  /* Remove default margin from h1 */
+  text-align: left;
+  /* Center align the text */
+  font-weight: bold;
+  /* Add this line to make the font bold */
+}
+
+.image-wrapper p {
+  font-size: 10px;
+  /* Adjust the font size for the paragraph within the h1 */
+  line-height: 1.6;
+  /* Increase the line spacing for the paragraph within the h1 */
+}
+
+
+
+.navigation-bar li:nth-child(2) {
+  padding: 1.5% 4%;
+}
+
+.navigation-bar li:nth-child(3) {
+  padding: 1% 3%;
+}
+
+.navigation-bar li:nth-child(4) {
+  padding: 0.5% 2%;
+}
+
+.logo {
+  width: auto;
+  height: auto;
+}
+
+.logo-wrapper {
+  width: 100%;
+  background-color: #c78c06;
+}
+
+
+.header-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+.nav-link {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+
+.border-box {
+  position: absolute;
+  bottom: 5px;
+  /* Adjust the distance from the bottom as needed */
+  left: 20px;
+  /* Adjust the distance from the left as needed */
+  color: #fff;
+  /* Set the text color for the paragraph */
+
+}
+
+header nav ul a:link,
+header nav ul a:visited {
+  text-decoration: none;
+}
+
+.nav {
+
+  display: flex;
+  justify-content: center;
+  /* Center the navigation horizontally */
+  align-items: flex-end;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #c78c06;
+
+}
+
+.nav li a:hover {
+  background-color: #c78c06;
+  /* Change the background color on hover */
+  color: #222;
+  /* Change the text color on hover */
+  /* transform: scale(10); */
+  /* Add any other styles you want for the hover effect */
+}
+
+.nav ul {
+  width: 100%;
+}
+
+
+header {
+
+  top: 20px;
+  /* Adjust the distance from the top as needed */
+  left: 20px;
+  /* Adjust the distance from the left as needed */
+  background-color: #222;
+  /* Set a background color with some transparency */
+  padding: 30px;
+  /* Add padding to create some space around the header content */
+  padding-left: 25px;
+
+  color: white;
+  /* Set a text color that contrasts well with the background */
+  /* Add any other styles you want for the header */
+}
+
+#search-bar {
+  width: 800px;
+  /* Adjust the width to your desired value */
+  box-sizing: border-box;
+  /* Include padding and border in the element's total width */
+  padding: 80px;
+  /* Adjust padding if needed */
+  margin-top: 10px;
+  /* Add margin for spacing */
+}
+
+/* .material-icons-outlined { */
+/* position: relative; */
+/* top: 50%; */
+/* Vertically center the icon */
+/* left: 1px; */
+/* Adjust the distance from the search bar */
+/* transform: translateY(-40); */
+/* Correct vertical alignment after using top: 50% */
+/* font-size: 24px; */
+/* Adjust the font size of the icon */
+/* color: #c78c06; */
+/* Adjust the color of the icon */
+/* cursor: pointer; */
+/* Add a pointer cursor when hovering over the icon */
+/* } */
+
+.contact-us {
+  background-color: #c78c06;
+  /* Set the background color */
+  color: black;
+  /* Set the text color */
+  padding: 20px 20px;
+  /* Adjust padding */
+  border: none;
+  /* Remove the border */
+  font-size: 15px;
+  /* Adjust font size */
+  cursor: pointer;
+}
+
+/* 
+  .material-symbols-outlined {
+    font-size: 24px;
+    margin-right: 3px;
+  }
+  */
+
+/* styles.css */
+.about-us {
+  border: 2px;
+  /* Border style and color */
+  /* Add padding for spacing between content and border */
+  box-sizing: border-box;
+  /* Include padding and border in element's total width */
+  /* Add margin for spacing between elements */
+  background-color: #ffe6ac;
+  padding: .8rem;
+}
+
+.wrapper-services {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: .8rem;
+
+}
+
+.about-us img {
+
+  max-width: 100%;
+  /* Resize the image to fit within the container */
+  height: auto;
+  /* Maintain aspect ratio */
+
+}
+
+.about-us h2 {
+  margin-top: 0px;
+  /* Add some space above the heading */
+}
+
+.about-us p {
+  margin-top: 10px;
+  /* Add some space above the paragraph */
+}
+
+
+.button::after {
+  content: "arrow_right";
+  font-family: "Material Icons Outlined";
+  font-size: 3rem;
+  vertical-align: middle;
+
+}
+
+.button {
+  padding: 0.3rem;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding-left: 1.3rem;
+  margin-top: 20px;
+
+}
+
+
+.digital-transformation {
+  border: 2px;
+  /* Border style and color */
+  /* Add padding for spacing between content and border */
+  box-sizing: border-box;
+  /* Include padding and border in element's total width */
+  margin: 0;
+  margin-bottom: 1rem;
+  /* Add margin for spacing between elements */
+  background-color: #ffe6ac;
+}
+
+.digital-padding {
+  padding: 1rem;
+}
+
+
+.background-gold {
+  background-color: #c78c06;
+  color: #222
+}
+
+.border-gold {
+  border: #c78c06 1px solid;
+  background-color: #112f4a;
+
+}
+
+
+
+.marketing {
+  border: 2px;
+  /* Border style and color */
+  /* Add padding for spacing between content and border */
+  box-sizing: border-box;
+  /* Include padding and border in element's total width */
+
+  /* Add margin for spacing between elements */
+  background-color: #ffe6ac;
+  margin-bottom: 1rem;
+}
+
+.marketing-padding {
+  padding: 1rem;
+}
+
+.video-production {
+  border: 2px;
+  /* Border style and color */
+  /* Add padding for spacing between content and border */
+  box-sizing: border-box;
+  /* Include padding and border in element's total width */
+  /* Add margin for spacing between elements */
+  background-color: #ffe6ac;
+  margin-bottom: 1rem;
+
+}
+
+.video-padding {
+  padding: 1rem;
+}
+
+.web-developement {
+  border: 2px;
+  /* Border style and color */
+  /* Add padding for spacing between content and border */
+  box-sizing: border-box;
+  /* Include padding and border in element's total width */
+  /* Add margin for spacing between elements */
+  background-color: #ffe6ac;
+
+  margin-bottom: 1rem;
+}
+
+.web-padding {
+  padding: 1rem;
+}
+
+.print {
+  border: 2px;
+  /* Border style and color */
+  /* Add padding for spacing between content and border */
+  box-sizing: border-box;
+  /* Include padding and border in element's total width */
+
+  /* Add margin for spacing between elements */
+  background-color: #ffe6ac;
+  margin-bottom: 1rem;
+}
+
+.print-padding {
+  padding: 1rem;
+}
+
+.vision {
+  background-image: url('/final-project/images/vision.jpg');
+  color: white;
+  background-position: center;
+  background-size: cover;
+  padding: 1rem;
+}
+
+.john-doe {
+  border: 2px;
+  /* Border style and color */
+  /* Add padding for spacing between content and border */
+  box-sizing: border-box;
+  /* Include padding and border in element's total width */
+
+  /* Add margin for spacing between elements */
+  background-color: #ffe6ac;
+  margin-bottom: 1rem;
+
+}
+
+.john {
+  width: 100%;
+}
+
+.john-padding {
+  padding: 1rem;
+}
+
+.bob-rite {
+  border: 2px;
+  /* Border style and color */
+  /* Add padding for spacing between content and border */
+  box-sizing: border-box;
+  /* Include padding and border in element's total width */
+
+  /* Add margin for spacing between elements */
+  background-color: #ffe6ac;
+  margin-bottom: 1rem;
+
+}
+
+.bob {
+  width: 100%;
+}
+
+.bob-padding {
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  /* Adjust the font size to your desired value */
+  font-weight: bold;
+  /* Make the font bold */
+}
+
+h3 {
+  font-size: 1.5rem;
+  /* Adjust the font size to your desired value */
+  font-weight: bold;
+  /* Make the font bold */
+}
+
+h2,
+h3 {
+
+  text-align: left;
+  padding: 1rem;
+}
+
+/* styles.css */
+h3,
+h4 {
+  margin-bottom: 10px;
+  /* Add margin at the bottom of h3, h4, and p */
+}
+
+p {
+  margin-top: 15px;
+}
+
+h4 {
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+/* styles.css */
+h4 {
+  margin-bottom: 5px;
+  /* Add margin at the bottom of h4 */
+  position: relative;
+  /* Create a positioning context for the pseudo-element */
+}
+
+h4::after {
+  content: '';
+  /* Add content to the pseudo-element */
+  display: block;
+  width: 100%;
+  height: 1px;
+  /* Set the height of the line */
+  background-color: #c78c06;
+  /* Line color */
+  position: absolute;
+  bottom: -3px;
+  /* Position the line above the p element */
+}
+
+
+.contact-form {
+  border: 2px solid rgb(255, 255, 255);
+  /* Add a black border */
+  padding: 1rem;
+  font-size: 10px;
+
+
+
+}
+
+.form-wrapper {
+  width: 100%;
+  /* Set the width to 100% of the viewport */
+
+
+  /* Add any additional styles you want */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: .5rem 1rem;
+  width: 100%;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  margin-bottom: .5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+
+
+}
+
+
+textarea {
+
+  height: 100px;
+}
+
+.container {
+  padding: 1px;
+}
+
+.send-botton {
+  background-color: black;
+  border: 1px solid black;
+  color: #c78c06;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.form-choice {
+  padding: 10px 20px;
+  padding: 20px;
+  /* Add padding inside the border box */
+
+}
+
+/* styles.css */
+.hours-table {
+  margin-top: 20px;
+  /* Add some spacing above the table */
+  border-collapse: collapse;
+  /* Collapse borders between table cells */
+  padding: 2rem;
+}
+
+.hours-table table {
+  width: 100%;
+  /* Make the table fill its container */
+  border: 1px solid #333;
+  /* Add border to the table */
+}
+
+.hours-table th,
+.hours-table td {
+  border: 1px solid #333;
+  /* Add border to table cells */
+  padding: 10px;
+  /* Add padding inside cells */
+  text-align: left;
+  /* Center-align cell content */
+  font-size: 10px;
+}
+
+.hours-table th {
+  background-color: #f0f0f0;
+  /* Add background color to table header cells */
+  font-weight: bold;
+}
+
+.hours-table td.days {
+  background-color: #ffe6ac;
+  color: black;
+  text-align: center;
+}
+
+
+
+.google-map {
+  /* Set the width */
+  height: 400px;
+  /* Set the height */
+  width: 100%
+}
+
+
+
+.map-img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.footer {
+  border: 2px solid black;
+  /* Add a black border */
+  padding: 3px;
+  /* Add padding inside the border box */
+  color: #c78c06;
+  /* Set text color to #c78c06 */
+  background-color: black;
+  /* Optional: Add background color to the border box */
+  font-size: 2px;
+  width: 100%;
+}
+
+
+
+
+
+.footer small {
+  font-size: 100%;
+  /* Adjust the font size for the small text */
+}
+
+.footer p {
+  margin: 10px 0;
+  /* Add some space between paragraphs */
+  font-size: 10px;
+  /* Adjust the font size as needed */
+}
+
+footer a {
+  text-decoration: underline;
+  /* Remove the default underline decoration */
+  color: #c78c06;
+  /* Set the link color */
+}
+
+.services-img {
+  width: 100%;
+}
+
+/* Your existing CSS rules */
+
+/* Add the media query */
+
+@media (min-width: 760px) {
+  .nav ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-wrapper {
+    width: auto;
+  }
+
+  .main-banner {
+    width: 100%;
+  }
+
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-wrapper {
+    background-color: transparent;
+  }
+
+  .main-banner {
+    width: 100%;
+    /* Make sure the image covers the container */
+    height: 100%;
+    /* Maintain aspect ratio */
+    position: relative;
+    object-fit: cover;
+    z-index: 100;
+  }
+
+  .text-overlay {
+    position: absolute;
+
+    /* Semi-transparent black overlay */
+
+    color: white;
+    padding: 45px 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 200;
+  }
+
+  .text-overlay div {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8rem;
+    align-items: center;
+  }
+
+  .text-overlay div {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8rem;
+
+  }
+
+  .grid-services {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-services div:nth-child(1),
+  .grid-services div:nth-child(2) {
+
+    grid-column: span 3;
+  }
+
+  .grid-services div:nth-child(3),
+  .grid-services div:nth-child(4),
+  .grid-services div:nth-child(5) {
+    grid-column: span 2;
+  }
+
+  .our-team {
+    display: grid;
+    margin-top: 0%;
+    align-self: center;
+  }
+
+  .team-wrapper {
+    width: 1200px;
+    margin: 0% 0%;
+  }
+
+  .john-doe {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bob-rite {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .bob-padding {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+
+  .bob {
+    grid-column: 2;
+  }
+
+  .our-team .div:nth-child(3) {
+    grid-column: span 2;
+  }
+
+  .contact-desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "f l" "t t";
+    width: 100%;
+  }
+
+  .form-desktop {
+    grid-area: f;
+    width: 100%;
+  }
+
+  .table-grid {
+    grid-area: t;
+    width: 100%;
+  }
+
+  .location-map {
+    grid-area: l;
+  }
+
+  .map-img {
+    width: 100%;
+  }
+
+  .hours-table {
+    padding: 0%;
+  }
+
+  .feet {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .background-gold {
+    width: auto;
+  }
+
+  .introduction-desktop {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: inherit;
+    padding: 8rem;
+
+  }
+
+  .text-overlay h1 {
+    font-size: 50rem;
+  }
+
+}
